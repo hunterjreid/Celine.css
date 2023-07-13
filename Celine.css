@@ -1,351 +1,317 @@
-/* Celine.css classless CSS
-    Credit: https://github.com/hunterjreid
-    GitHub: https://github.com/hunterjreid/Celine.css
-    Licensed under the MIT License.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
-/* Make it so you add a Main color and then the it shows up 10% of the time
-
-
-/* 1. Global */
-/*  a) Font */
-@import url("https://fonts.googleapis.com/css?family=Space+Mono"); /* Space Mono */
-@import url("https://fonts.googleapis.com/css?family=Varela+Round"); /* Varela Round */
-@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
-
-/*  b) Variables */
-:root {
-  --heading-link-font: 'Almarai', sans-serif;
-  --font: "Space Mono";
-  --heading-link-color: #494949;
-  --background-color: #f7f7ff;
-  --h1-color: #fe5f55;
-  --h2-color: #fd8580;
-  --h3-color: #f9d1d5;
-  --h4-color: #dae6f5;
-  --h5-color: #bdd5ea;
-  --h6-color: #8aa4c2;
-  --alt-color: #577399;
-  --link-color: #0073ff;
-}
-
-/*  c) Selection */
-::selection {
-  background-color: var(--alt-color);
-}
-
-pre::selection,
-code::selection {
-  background-color: gray;
-}
-
-/*  d) Document Styling */
+/* Global */
 html {
   font-size: 62.5%;
-  font-family: var(--font);
 }
 
-body {
-  font-size: 1.9rem;
-  line-height: 1.7;
-  max-width: 50em;
-  margin: auto;
-  color: #303030;
-  background-color: var(--background-color);
-  padding: 13px;
-}
 
-/* 2. Text */
-/*  a) Headings */
+/* Headers */
+h1 {
+  
+  }
+  
+  h2 {
+    color: #00ff00; /* Add your desired color here */
+  }
+  
+  h3 {
+    color: #0000ff; /* Add your desired color here */
+  }
+  
+  /* Text Elements */
+  p {
+    color: #eeeeee; /* Add your desired color here */
+  }
+  
+  a {
+    color: #00ffff; /* Add your desired color here */
+  }
+  
+  /* Lists */
+  ul,
+  ol {
+    color: #b6b6b6; /* Add your desired color here */
+  }
+  
+  /* Forms */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    color: #ff8000; /* Add your desired color here */
+  }
+
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  line-height: 1.1;
-  font-family: var(--heading-link-font);
-  font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  text-decoration: none;
-  color: #303030;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 2.35em;
+  font-size: 2.8rem;
+  color: #0fe4e4; /* Add your desired color here */
+  background: #272727;
+  border-bottom: 2px solid #5900ff;
+
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.4rem;
+  color: #2e80eb; /* Add your desired color here */
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 2rem;
+  color: #27cf51; /* Add your desired color here */
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.8rem;
+  color: #3cff00; /* Add your desired color here */
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 1.6rem;
+  color: #19b984; /* Add your desired color here */
+  border-bottom: 2px solid #20d67b;
 }
 
 h6 {
-  font-size: 1em;
+  font-size: 1.4rem;
+  color: #11ac5e; /* Add your desired color here */
 }
 
-/* b) Lists and Navigation Bar */
-ul {
-  padding-left: 1.4em;
-  margin-top: 0px;
-  margin-bottom: 2.5rem;
-}
-
-li {
-  margin-bottom: 0.4em;
-}
-
-nav a {
-  margin-right: 0.5em;
-}
-
-/*  c) Paragraph */
-p {
-  margin-top: 0px;
-  margin-bottom: 2.5rem;
-}
-
-/*  d) Blockquotes */
-blockquote {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 1em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  padding-right: 0.8em;
-  border-left: 5px solid var(--alt-color);
-  margin-bottom: 2.5rem;
-}
-
-blockquote p {
-  margin-bottom: 0;
-}
-
-/* e) Preformatted Text and Code */
-pre {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  display: block;
-  padding: 1em;
-  overflow-x: auto;
-  margin-top: 0px;
-  margin-bottom: 2.5rem;
-}
-
-code {
-  font-size: 0.9em;
-  padding: 0 0.5em;
-  background-color: rgba(0, 0, 0, 0.068);
-  color: rgb(0, 0, 0);
-  white-space: pre-wrap;
-}
-
-pre > code {
-  padding: 0;
-  background-color: transparent;
-  white-space: pre;
-}
-
-/*  f) Special Text Elements */
-small,
-sub,
-sup {
-  font-size: 75%;
-}
-
-small small {
-  font-size: 100%;
-}
-
-time {
-  font-style: normal;
-  margin-right: 0.5em;
-}
-
-hr {
-  border-color: var(--alt-color);
-}
-
-/* 3. Links */
+/* Links */
 a {
-  font-family: var(--heading-link-font);
-  color: var(--link-color);
+  color: #0073ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--alt-color);
+  color: #004ecf;
 }
 
-a h1,
-a h2,
-a h3,
-a h4,
-a h5,
-a h6 {
-  color: var(--heading-link-color);
+/* Text Elements */
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-a h1:hover,
-a h2:hover,
-a h3:hover,
-a h4:hover,
-a h5:hover,
-a h6:hover {
-  color: var(--alt-color);
+blockquote {
+  margin: 0;
+  padding: 10px;
+  background-color: #8b060634;
+  border-left: 4px solid #999999;
 }
 
-/* 4. Images */
-img {
-  max-width: 100%;
-  margin-top: 0px;
-  margin-bottom: 1.5rem;
+pre,
+code {
+  font-family: Consolas, monospace;
 }
 
-/* 5. Tables */
+pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  overflow: auto;
+}
+
+code {
+  background-color: #f7f7f7;
+  padding: 2px 4px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+/* Lists */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Tables */
 table {
-  text-align: justify;
   width: 100%;
   border-collapse: collapse;
 }
 
-td,
+th,
+td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
 th {
-  padding: 0.5em;
-  border-bottom: 1px solid white;
+  font-weight: bold;
+  background-color: #f5f5f5;
 }
 
-/* 6. Inputs */
-input,
-textarea {
-  border: 1px solid black;
-}
-
-input:focus,
-textarea:focus {
-  border: 1px solid var(--alt-color);
-}
-
-textarea {
-  width: 100%;
-}
-
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
 textarea,
-select,
-input[type] {
-  color: black;
-  padding: 6px 10px;
+select {
+  width: 100%;
+  padding: 8px;
   margin-bottom: 10px;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
 }
 
-textarea:focus,
-select:focus,
-input[type]:focus {
-  border: 1px solid var(--alt-color);
-  outline: 0;
+textarea {
+  resize: vertical;
 }
 
-input[type="checkbox"]:focus {
-  outline: 1px dotted var(--alt-color);
+input[type="checkbox"] {
+  margin-right: 5px;
 }
 
-label,
-legend,
-fieldset {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+label {
+  font-weight: bold;
 }
 
-/* 7. Buttons */
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+button {
   display: inline-block;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: var(--background-color);
-  color: black;
-  border-radius: 1px;
-  border: 1px solid var(--alt-color);
+  padding: 8px 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0073ff;
+  border: none;
+  border-radius: 2px;
   cursor: pointer;
-  box-sizing: border-box;
 }
-
-.button[disabled],
-button[disabled],
-input[type="submit"][disabled],
-input[type="reset"][disabled],
-input[type="button"][disabled] {
-  cursor: default;
-  opacity: 0.5;
-}
-
-.button:focus:enabled,
-.button:hover:enabled,
-button:focus:enabled,
-button:hover:enabled,
-input[type="submit"]:focus:enabled,
-input[type="submit"]:hover:enabled,
-input[type="reset"]:focus:enabled,
-input[type="reset"]:hover:enabled,
-input[type="button"]:focus:enabled,
-input[type="button"]:hover:enabled {
-  background-color: var(--alt-color);
-  outline: 0;
-}
-
-/* 8. Footer */
-footer {
-  margin-top: 1em;
-}
-
-/* 9. Responsiveness */
-@media (max-width: 684px) {
+html {
+    font-size: 62.5%;
+  }
+  
   body {
-    font-size: 1.53rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background: linear-gradient(#2e2e2e, #000000);
+    padding: 20px;
+    max-width: 410px;
+    display: flex;
+    margin: auto;
+  }
+  
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.8rem;
+
+  }
+  
+  h2 {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-size: 2.4rem;
+
+  }
+  
+  h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 2rem;
+
+  }
+  
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+  
+  }
+  
+  h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+  }
+  
+  h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+  }
+
+
+button:hover {
+  background-color: #004ecf;
+}
+
+/* Miscellaneous */
+hr {
+  border: none;
+  border-top: 1px solid #dddddd;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
   }
 }
 
-@media (max-width: 382px) {
-  body {
-    font-size: 1.35rem;
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  h4 {
+    font-size: 1.6rem;
+  }
+  
+  h5 {
+    font-size: 1.4rem;
+  }
+  
+  h6 {
+    font-size: 1.2rem;
   }
 }
