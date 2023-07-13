@@ -1,6 +1,6 @@
 # Celine.css
 
-![99%](https://progress-bar.dev/25?title=Progress+done:)
+![99%](https://progress-bar.dev/99?title=Progress+done:)
 
 ## Celine.css is a minimalist, pure no-class plug-and-play CSS framework that enables developers to quickly and easily improve the visual appeal of their HTML pages.
 
